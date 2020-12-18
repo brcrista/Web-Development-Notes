@@ -1,0 +1,4 @@
+- **Cross-site request forgery (CSRF)**
+- **Cross-site scripting (XSS)**
+- **Overposting**
+- **SQL injection**
