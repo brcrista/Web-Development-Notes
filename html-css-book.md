@@ -30,7 +30,31 @@ Modern websites need a flexible, or **liquid**, layout to handle differently siz
 ### Grids
 A **grid system** is often helpful in laying out content. Grid systems are usually handled by **CSS frameworks** such as Boostrap (though CSS 3 now has grids built in.) A grid is defined by a number of columns. Each element then takes up some number of columns.
 
-A common design is to have a heading, content, and footer. In the content, there is a feature (full width), then smaller elements underneath.
+A common design is to have a heading, content, and footer. In the content, there is a feature (full width), then smaller elements underneath:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/main.css" media="screen">
+    <script src="scripts/bundle.js" async></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+      </nav>
+    </header>
+    <div class="content">
+      <article>
+      </article>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>
+```
 
 An old way to make grids in a **fixed layout** (where all widths are some static number of pixels) was to float a bunch of divs and compute the widths of the divs and their parent so they fall into a grid. Of course, the grid doesn't hold together for liquid layouts. Frameworks fix this problem because they will adapt the grid based on the size of the viewport.
 
@@ -63,7 +87,6 @@ HTML 5 also lets you wrap a block element with `<a>`, which was not allowed befo
 
 Step 1: User profiles, what are we doing, normal business-plan type of stuff.
 
-
 Step 2: A **sitemap** organizes the content that needs to go on a site.
 
 Step 3: A **wireframe** is a mock-up of the content on a page and its layout. It ignores things like font, color, or images. It might be done in software like Photoshop or Illustrator or even just sketched on paper.
@@ -80,7 +103,7 @@ There are three principles of design:
 
 **Grouping** means putting related information close to each other. It helps people organize the information in their minds without really reading it.
 
-**Similarity** is other dimension of organization along with grouping. Related content or function should look similar.
+**Similarity** is another dimension of organization along with grouping. Related content or function should look similar.
 
 ### Nav bar
 * Keep the nav bar to 8 items, max. (Cf. *Code Complete*'s advice on variables in a scope.)
